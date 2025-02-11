@@ -100,12 +100,11 @@ const Reg= () =>  {
     <option value="Fresher">Fresher</option> 
     <option value="Experienced">Experienced</option></select>
     <br></br><br></br>
-    <div className='lbt'>
-    <button type='submit'onClick={save}>continue</button>
-    </div>
-    
   </form>
   </div>
+  <div className='lbt1' style={{bottom:0}}>
+    <button type='submit'onClick={save}>Continue</button>
+    </div>
  </div> 
 
  </div>   

@@ -2,7 +2,7 @@ footer
 {
    text-align: center; /* Center text horizontally */
     position: fixed;/* Makes footer stick to the bottom */
-    padding: 1px 0; /* Padding for better spacing */
+    padding: auto; /* Padding for better spacing */
     bottom: 0;
     width: 100%;
     color: #ff914d;

@@ -4,10 +4,16 @@ import img1 from './jeet.jpg';
 import img2 from './Pavani_phott.jpg';
 import img3 from  './harsha_photo.jpg';
 import img4 from './vinay_photo.jpg';
-import Footer from "./footer";
+import { useNavigate } from "react-router-dom";
+
+import logo from "../vpu(wt).png";
 const AboutUs = () => {
+  const navigate=useNavigate();
   return (
     <div className="about-us">
+           <div className='logoin'>
+  <img onClick={() => navigate('/')} src={logo} alt="React Logo" /><br></br><br></br>
+  </div>
       <header className="about-us-header">
         <h1>About Us</h1>
         <p>
@@ -43,6 +49,8 @@ const AboutUs = () => {
                 <h2></h2>
             <p>VINAY<br></br>Frontend developer</p>
           </div>
+          
+           
         </div>
       </section>
     
