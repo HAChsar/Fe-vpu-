@@ -1,0 +1,46 @@
+header{
+    background-color: #fff6ea;
+    width: 100%;
+    height: 65px;
+    display: flex;
+}
+.logo img
+{
+    height: 65px;
+    width:auto;
+    margin-left: 25%;
+}
+
+.interview
+{
+    text-align: center;
+    margin-left: 8%;
+    font-synthesis-weight:auto;
+    font-size: larger;
+    
+}
+.interview :hover
+{
+    color: #ff914d;
+}
+.resume
+{
+    text-align: center;
+    margin-left: 5%;
+    font-synthesis-weight:auto;
+    font-size: larger;
+    
+}
+.resume :hover
+{
+    color: #ff914d;
+}
+
+.login img
+{
+    height: 65px;
+    width:auto;
+    margin-left: 670px;
+}
+
+

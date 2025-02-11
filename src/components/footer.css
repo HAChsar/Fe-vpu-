@@ -1,0 +1,34 @@
+footer
+{
+   text-align: center; /* Center text horizontally */
+    position: fixed;/* Makes footer stick to the bottom */
+    padding: 1px 0; /* Padding for better spacing */
+    bottom: 0;
+    width: 100%;
+    color: #ff914d;
+    background-color: #fff6ea; 
+}
+hr
+{
+    color: #ff914d;
+}
+.footer1 
+{
+    display: flex;  
+    justify-content: center;
+    gap: 50px;
+}
+.footer1 p
+{
+    cursor: pointer;
+    color: black;
+    font-size: medium;
+    padding-bottom: 0.6;
+}
+.footer1 p:hover
+{
+    color: #ff914d;
+}
+footer hr { margin: 0.5px 0; /* Adjust vertical margin around the hr element */ }
+
+

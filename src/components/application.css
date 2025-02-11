@@ -1,0 +1,72 @@
+
+.appbox
+{
+    display: block;
+    padding: 50px;
+    color: black;
+    height: 200px; 
+    margin-left: 3%;
+    background-color: #fff6ea;
+    float:left;
+    border-radius: 10px;
+    font-size: medium;
+    font-size: x-large;  
+    justify-content: flex;
+    display: inline;
+    gap: 40px;
+}
+.appb1
+{
+    display: block;
+    padding: 20px;
+    background-color: whitesmoke; 
+border-radius: 10px;
+    text-align: left;
+}
+.appb1 p {
+    animation: typing 2s steps(50), blink-caret 2s step-end infinite;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Ensure the text doesn't overflow */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+  }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 70% }
+}  
+.bt1 button
+{
+    padding: 10px;
+    width: 40%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff914d;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0.5px;
+    border-radius: 5px;
+    font-size: x-large;
+    animation: fadeIn 3s ease-in-out;  
+    color: #fff6ea; 
+}
+.bt1 button:hover
+{
+    background-color: rgb(154, 65, 33);
+    text-decoration:solid;
+}
+.slides img
+{
+  border-radius: 2%;
+  float: right;
+  margin-right: 40px;
+  
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+

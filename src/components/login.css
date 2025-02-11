@@ -1,0 +1,94 @@
+        input {
+            display: block;
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 110%;
+            font-size: medium;
+            color: #ff914d;
+            border-radius: 10px;
+            
+        }
+        ::placeholder
+        {
+            color: #ff914d;
+        }
+        .gender input
+        {
+            width: auto;
+        }
+        .lbt button {
+            padding: 10px;
+            width: 118%;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ff914d;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 0.5px;
+            border-radius: 5px;
+            font-size: larger;
+            color: #fff6ea;
+        }
+        .box1
+        {
+            display: block;
+            width: 800px; 
+            height: 350px; /* Adjust height as needed */ 
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            float: center;
+            margin: auto; /* Center horizontally */ 
+            position: relative; /* Allow positioning adjustments */
+            left: 10px;
+            align-items: left;
+        }
+        .form
+        {
+            margin-left: 50px;
+        }
+        button:hover
+        {
+            background-color: rgb(154, 65, 33);
+            text-decoration: underline;
+            
+        }
+        .ig1
+        {
+             width: 30px;
+             position: relative;
+            right: 400px;
+        }
+        .flx
+        {
+            display: flex;
+            justify-content:space-between;  
+        }
+        .loginpage
+        {
+            background-color: whitesmoke;
+            height: 620px;
+            margin: 0;
+        }
+        .logoin img
+        {
+            float: left;
+            height: 55px;
+            width:auto;
+            margin-left: 3%;
+            cursor: pointer;
+        }
+        .sign
+        {
+            display: flex;
+        }
+        i
+        {   
+            color: #ff914d;
+            cursor: pointer;
+        }
+        
+        
+       
+    
+
+  

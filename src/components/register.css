@@ -1,0 +1,87 @@
+input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 110%;
+    font-size: medium;
+    color: black;
+}
+.lbt button{
+    padding: 10px;
+    width: 118%;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff914d;
+    font-family:'Times New Roman', Times, serif;
+    border: 0.5px;
+    border-radius: 5px;
+    font-size: medium;
+    
+}
+
+button:hover
+{
+    background-color: rgb(154, 65, 33);
+}
+.box
+{
+    display: block;
+    padding:  33px 100px;
+    color: black;
+    max-width: 600px;
+    height: 350px; 
+    margin:auto;
+    background-color: white;
+    float:center;
+    border-radius: 10px;
+    font-size: medium;
+    
+}
+#Student,#gender,#date
+{
+    color: #ff914d;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.page
+{
+    background-color: whitesmoke;
+    height: 600px;
+}
+.logoin img
+{
+    float: left;
+    height: 55px;
+    width:auto;
+    margin-left: 3%;
+    cursor: pointer;
+}
+.sign
+{
+    display: flex;
+}
+.sign u
+{
+    cursor: pointer;
+    color: #ff914d;
+    margin-left: 20px;
+}
+.reqd
+{
+   justify-content: flex;
+   gap: auto;
+}
+.sp
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+

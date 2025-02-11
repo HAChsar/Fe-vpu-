@@ -1,0 +1,56 @@
+.header{
+    background-color: #fff6ea;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    position: fixed;
+}
+.logo img
+{
+    height: 65px;
+    width:auto;
+    margin-left: 25%;
+    cursor: pointer;
+    
+}
+
+.interview
+{
+    text-align: center;
+    margin-left: 8%;
+    font-synthesis-weight:auto;
+    font-size: larger;
+    cursor: pointer;
+    
+}
+.interview :hover
+{
+    color: #ff914d;
+    
+}
+.resume
+{
+    text-align: center;
+    margin-left: 5%;
+    font-synthesis-weight:auto;
+    font-size: larger;
+    cursor: pointer;
+    
+}
+.resume :hover
+{
+    color: #ff914d;
+}
+
+.login img
+{
+    height: 65px;
+    width:auto;
+    margin-left: 670px;
+    cursor: pointer;
+}
+
+
+
+
+
