@@ -101,6 +101,54 @@ a{
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 1024px) {
+    .box {
+        width: 80%;
+        padding: 20px;
+        height: auto;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .lbt1 button {
+        width: 100%;
+        font-size: medium;
+        margin-left: 0;
+    }
+}
+
+/* Media Query for Mobile Devices (max-width: 480px) */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 15px;
+        height: auto;
+    }
+
+    input {
+        width: 100%;
+        font-size: small;
+    }
+
+    .lbt1 button {
+        width: 100%;
+        font-size: medium;
+        margin-left: 0;
+    }
+
+    .sign {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoin img {
+        height: 40px;
+        margin-left: 0;
+    }
+}
 
 
 

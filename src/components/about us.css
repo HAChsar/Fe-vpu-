@@ -70,6 +70,43 @@
     margin-top: 10%;
     
   }
+  @media (max-width: 1024px) {
+    .about-us {
+        width: 100%;
+        padding: 15px;
+    }
+    .about-us-content {
+        max-width: 100%;
+    }
+    .team-member {
+        width: 200px;
+        height: auto;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .about-us {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-us-content {
+        max-width: 100%;
+    }
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-member {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .team-member img {
+        width: 80%;
+    }
+  }
+
   
 
   

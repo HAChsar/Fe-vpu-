@@ -87,9 +87,39 @@
             color: #ff914d;
             cursor: pointer;
         }
+        @media (max-width: 1024px) {
+            .box1 {
+                width: 600px;
+                height: auto;
+            }
+            .flx {
+                flex-direction: column;
+            }
+            .loginpage {
+                height: auto;
+            }
+        }
         
-        
-       
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .box1 {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+            }
+            input, .lbt button {
+                width: 100%;
+            }
+            .flx {
+                flex-direction: column;
+            }
+            .loginpage {
+                height: auto;
+            }
+            .logoin img {
+                height: 40px;
+            }
+        }
     
 
   

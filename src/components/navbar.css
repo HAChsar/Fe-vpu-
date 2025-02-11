@@ -66,6 +66,46 @@
     align-items: right;
     cursor: pointer;
 }
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo img {
+        margin-left: 0;
+    }
+    .interview, .resume {
+        margin-left: 0;
+        font-size: medium;
+    }
+    .login {
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo img {
+        height: 50px;
+        margin-left: 0;
+    }
+    .interview, .resume {
+        margin-left: 0;
+        font-size: small;
+    }
+    .login {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    #displaynav {
+        font-size: medium;
+     }
+    }
 
 
 
