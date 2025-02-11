@@ -9,7 +9,7 @@ const Navbar = ({ name }) =>{
   useEffect(() => {
     const display = document.getElementById('displaynav');
     if (display) {
-      display.value ="Harsha";
+      display.value ="USER";
     }
   }, []);
   return (
