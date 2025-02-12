@@ -103,11 +103,13 @@ const Reg = () => {
               <option value="Experienced">Experienced</option>
             </select>
             <br /><br />
-            <button type='submit' onClick={save}>continue</button>
           </form>
         </div>
+        <div className='lbt1'>
+            <button type='submit' onClick={save}>continue</button>
+            </div>
       </div>
-      <Footer />
+     
     </div>
   );
 }
