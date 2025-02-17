@@ -38,7 +38,7 @@ const AboutUs = () => {
           <div className="team-member">
           <img src={img2} alt="member" width={100}/>
           <a href="https://portfolio-two-drab-31.vercel.app/" target="blank"> <p>PAVANI<br></br>Backend Developer</p></a>
-          
+
             
             </div>
             <div className="team-member">
