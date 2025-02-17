@@ -16,13 +16,9 @@ const Reg = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [role, setRole] = useState("Student");
 
-  
-
   async function save(event) {
     event.preventDefault();
     try {
-    console.log('firstName',role)
-
       const response = await axios.post("http://localhost:8080/home/register", {
         firstName: firstName,
         lastName: lastName,
@@ -33,7 +29,12 @@ const Reg = () => {
         phoneNumber: phoneNumber,
         role: role,
       });
+
+      // Save user's name to local storage
+      localStorage.setItem('userName', firstName);
+
       alert("Registration Successful");
+      navigate('/'); // Navigate to home page or any other page you want
       return response;
     } catch (err) {
       alert(err);
@@ -43,12 +44,12 @@ const Reg = () => {
   return (
     <div className='page'>
       <div className='logoin'>
-        <img onClick={() => navigate('/')} src={logo} alt="React Logo" />
+        <img onClick={() => navigate('/login')} src={logo} alt="React Logo" />
       </div><br /><br /><br />
       <div className='box'>
         <title>Register</title>
         <div className="sign">
-          <p><l>Register to VprepU.</l></p>
+          <p>Register to VprepU.</p>
           <p onClick={() => navigate('/login')}><u>Have an account?</u></p>
         </div>
         <div className="sp">
@@ -108,13 +109,10 @@ const Reg = () => {
         </div>
         <div className='lbt1'>
             <button type='submit' onClick={save}>continue</button>
-            </div>
+        </div>
       </div>
-    
     </div>
   );
 }
 
 export default Reg;
-
-
