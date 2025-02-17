@@ -11,7 +11,7 @@ const AboutUs = () => {
   const navigate=useNavigate();
   return (
     <div className="about-us">
-           <div className='logoin'>
+           <div className='logoin' style={{position:"fixed"}}>
   <img onClick={() => navigate('/')} src={logo} alt="React Logo" /><br></br><br></br>
   </div>
       <header className="about-us-header">
@@ -37,20 +37,20 @@ const AboutUs = () => {
           </div>
           <div className="team-member">
           <img src={img2} alt="member" width={100}/>
-            <p>PAVANI<br></br>Backend Developer</p>
+          <a href="https://portfolio-two-drab-31.vercel.app/" target="blank"> <p>PAVANI<br></br>Backend Developer</p></a>
+          
             
             </div>
             <div className="team-member">
             <img src={img3} alt="team_member" width={150} height={216}/>
-            <p>HARSHA<br></br>Frontend Developer</p>
+            
+            <a href="https://harshaportfolio-two.vercel.app/" target="blank"><p>HARSHA<br></br>Frontend Developer</p></a>
             </div>
             <div className="team-member">
             <img src={img4} alt="team-member" width={150} height={216}/>
                 <h2></h2>
             <p>VINAY<br></br>Frontend developer</p>
           </div>
-          
-           
         </div>
       </section>
     

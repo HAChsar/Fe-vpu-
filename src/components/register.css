@@ -70,7 +70,8 @@ a{
 .page
 {
     background-color: whitesmoke;
-    height: 750px;
+    height: 620px;
+    padding: auto;
    
 }
 .logoin img

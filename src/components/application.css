@@ -54,13 +54,7 @@ border-radius: 10px;
     background-color: rgb(154, 65, 33);
     text-decoration:solid;
 }
-.slides img
-{
-  border-radius: 2%;
-  float: right;
-  margin-right: 40px;
-  
-}
+
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -85,7 +79,6 @@ border-radius: 10px;
         width: 80%;
     }
 }
-
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     .appbox {

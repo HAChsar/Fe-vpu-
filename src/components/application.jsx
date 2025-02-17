@@ -3,7 +3,9 @@ import Navbar from './navbar';
 import Footer from "./footer";
 import "./application.css";
 import { useNavigate } from "react-router-dom";
-import i1 from "./resumeimg1.jpeg";
+
+
+import Footer1 from "./footer(home)";
 const Application = () =>
 {
     const navigate=useNavigate()
@@ -21,12 +23,10 @@ const Application = () =>
         </div>
         </div>  
     </div>
-    <div className="slides">
-        <img src={i1} width={500} height={300}/>
-    </div>
-    <div>
-        <Footer/>
-    </div>
+
+  
+    <Footer1/>
+   
     </>
    );
 };

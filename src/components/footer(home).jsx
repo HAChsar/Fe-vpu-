@@ -1,12 +1,11 @@
 import React from 'react';
 import './footer.css';
 import { useNavigate } from "react-router-dom";
-export default function Footer() {
+export default function Footer1() {
   const navigate=useNavigate()
     return (
       <footer>
         <div className="footer1">
-        <p onClick={() => navigate('/')}>Home</p>
         <p onClick={ () => navigate('/aboutus')}>About us</p>
         <p onClick={()=> navigate('/feedback')}>Feedback</p>
         </div>

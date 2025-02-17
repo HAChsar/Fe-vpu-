@@ -6,6 +6,7 @@ import Reg from './register';
 import Footer from './footer';
 import AboutUs from './about us';
 import Application from './application';
+import Slides from './reslides'
 export default function Navigate() {
   return (
     <div> 
@@ -16,7 +17,7 @@ export default function Navigate() {
      <Route path='register' element={<Reg/>}/>
      <Route path='aboutus' element={<AboutUs/>}/>
      <Route path='footer' element={<Footer/>}/>
-   
+      <Route path='slide' element={<Slides/>}/>
      </Routes>
     </div>
   );

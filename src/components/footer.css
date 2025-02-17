@@ -1,12 +1,16 @@
 footer
 {
-   text-align: center; /* Center text horizontally */
-    position: fixed;/* Makes footer stick to the bottom */
-    padding: auto; /* Padding for better spacing */
-    bottom: 0;
+    text-align: center; /* Center text horizontally */
+    position:fixed;/* Makes footer stick to the bottom */
+    padding: 10px; /* Padding for better spacing */
+    margin-top:40%;
     width: 100%;
     color: #ff914d;
     background-color: #fff6ea; 
+    bottom: 0;
+    height: 100px;
+    right: 0;
+    left: 0;
 }
 hr
 {
@@ -20,6 +24,7 @@ hr
 }
 .footer1 p
 {
+  
     cursor: pointer;
     color: black;
     font-size: medium;

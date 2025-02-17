@@ -3,6 +3,7 @@ import './register.css';
 import logo from "../vpu(wt).png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Footer from './footer';
 
 const Reg = () => {
   const navigate = useNavigate();
@@ -109,7 +110,7 @@ const Reg = () => {
             <button type='submit' onClick={save}>continue</button>
             </div>
       </div>
-     
+    
     </div>
   );
 }
