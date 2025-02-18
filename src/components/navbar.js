@@ -10,10 +10,12 @@ const Navbar = () => {
   useEffect(() => {
     const display = document.getElementById('displaynav');
     const userName = localStorage.getItem('userName');
-
+    display.value='LOGIN';
+    
     if (display && userName) {
       display.value = userName;
     }
+    
   }, []);
 
   return (
