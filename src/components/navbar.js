@@ -13,7 +13,7 @@ const Navbar = () => {
     display.value='LOGIN';
     
     if (display && userName) {
-      display.value = userName;
+      display.value = userName.toUpperCase();
     }
     
   }, []);

@@ -56,12 +56,12 @@ const Reg = () => {
           <form className="signup-form">
             <p style={{ display: 'inline' }}>First Name</p>
             <p style={{ display: 'inline', color: 'red' }}>*</p>
-            <input type="firstname" id="firstName" placeholder="enter your first name" required=""
+            <input type="firstname" id="firstName" placeholder="enter your first name(No spaces)" required=""
               value={firstName} onChange={(event) => { setFirstName(event.target.value); }} />
 
             <p style={{ display: 'inline' }}>Last Name</p>
             <p style={{ display: 'inline', color: 'red' }}>*</p>
-            <input type="Lastname" id="lastName" placeholder="enter your Last name" required=""
+            <input type="Lastname" id="lastName" placeholder="enter your Last name(No spaces)" required=""
               value={lastName} onChange={(event) => { setLastName(event.target.value); }} />
 
             <p style={{ display: 'inline' }}>DOB</p>
