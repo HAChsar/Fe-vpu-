@@ -3,7 +3,6 @@ import './register.css';
 import logo from "../vpu(wt).png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Footer from './footer';
 
 const Reg = () => {
   const navigate = useNavigate();
@@ -34,7 +33,7 @@ const Reg = () => {
       localStorage.setItem('userName', firstName);
 
       alert("Registration Successful");
-      navigate('/'); // Navigate to home page or any other page you want
+      navigate('/login');  // Navigate to home page or any other page you want
       return response;
     } catch (err) {
       alert(err);
