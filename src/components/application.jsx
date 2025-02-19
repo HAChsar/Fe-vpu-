@@ -76,7 +76,7 @@ const Application = () =>
           <span
             key={index}
             className={`carousel-dot ${index === currentIndex ? "active" : ""}`}
-            onClick={() => goToSlide(index)}
+           
           ></span>
         ))}
       </div>
