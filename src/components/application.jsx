@@ -1,11 +1,10 @@
 import React from "react";
 import Navbar from './navbar';
-import Footer from "./footer";
+
 import "./application.css";
 import { useNavigate } from "react-router-dom";
 import  { useState, useEffect } from "react";
 import imageR1 from "./resumeimg1.jpeg";
-import imageR2 from "./resumeimg2.png";
 import imageR3 from "./resumeimg2(op).jpeg";
 import imageR4 from "./resumeimg3.png";
 import imageR5 from "./resumeimg3(op).jpeg";
@@ -16,10 +15,10 @@ const Application = () =>
     const navigate=useNavigate();
     const im = [
       { id: 1, image: imageR1 },
-      { id: 2, image: imageR2 },
-      { id: 3, image: imageR3 },
-      { id :4, image: imageR4},
-      { id :5, image: imageR5},
+     
+      { id: 2, image: imageR3 },
+      { id :3, image: imageR4},
+      { id :4, image: imageR5},
     ];
     
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,11 +42,8 @@ const Application = () =>
       };
     return(
     <>
-     <div>
     <Navbar/>
-    </div>
-    <br></br><br></br><br></br><br></br>
-    
+    <br></br><br></br>
     <div className="resappli">
     <div className="appbox">
         <div className="appb1">
@@ -57,8 +53,7 @@ const Application = () =>
         </div>
         </div>  
     </div><br></br>
-    <div className="carousel-container">
-        
+    <div className="carousel-container"> 
       <div className="carousel">
         {im.map((slide, index) => (
           <div
@@ -73,18 +68,17 @@ const Application = () =>
       </div>
       <div className="carousel-indicators">
         {im.map((_, index) => (
-          <span
+          <span 
             key={index}
             className={`carousel-dot ${index === currentIndex ? "active" : ""}`}
-           
+            onClick={()=>goToNextSlide()}
           ></span>
         ))}
       </div>
     </div>
-</div>
+    </div>
     <Footer1/>
-   
-    </>
+  </>
    );
 };
 export default Application;

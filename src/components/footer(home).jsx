@@ -10,7 +10,7 @@ export default function Footer1() {
         <p onClick={()=> navigate('/feedback')}>Feedback</p>
         </div>
         <hr/>
-        <p>© Copyright 2025 VprepU-AI Quadminds Pvt Ltd. All Rights Reserved.</p>
+        <p style={{padding:"10px"}}>© Copyright 2025 VprepU-AI Quadminds Pvt Ltd. All Rights Reserved.</p>
       </footer>
     );
   }

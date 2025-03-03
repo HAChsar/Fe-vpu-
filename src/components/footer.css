@@ -1,26 +1,24 @@
 footer
 {
     text-align: center; /* Center text horizontally */
-    position:fixed;/* Makes footer stick to the bottom */
-    padding: 10px; /* Padding for better spacing */
+    position: fixed;
+    padding: 10px; 
     margin-top:40%;
     width: 100%;
     color: #ff914d;
     background-color: #fff6ea; 
     bottom: 0;
-    height: 100px;
+    height: auto;
     right: 0;
     left: 0;
 }
-hr
-{
-    color: #ff914d;
-}
+
 .footer1 
 {
     display: flex;  
     justify-content: center;
     gap: 50px;
+    padding: 10px;
 }
 .footer1 p
 {
@@ -37,7 +35,7 @@ hr
 footer hr { margin: 0.5px 0; /* Adjust vertical margin around the hr element */ }
 @media (max-width: 1024px) {
     .footer1 {
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
     }
     .footer1 p {
@@ -46,10 +44,11 @@ footer hr { margin: 0.5px 0; /* Adjust vertical margin around the hr element */ 
 }
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .footer1 {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
+        bottom: 0;
     }
     .footer1 p {
         font-size: small;

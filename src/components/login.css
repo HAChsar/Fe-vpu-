@@ -1,125 +1,175 @@
-        input {
-            display: block;
-            margin-bottom: 15px;
-            padding: 10px;
-            width: 110%;
-            font-size: medium;
-            color: #ff914d;
-            border-radius: 10px;
-            
-        }
-        ::placeholder
-        {
-            color: #ff914d;
-        }
-        .gender input
-        {
-            width: auto;
-        }
-        .lbt button {
-            padding: 10px;
-            width: 118%;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #ff914d;
-            font-family:system-ui, -apple-system, BlinkMacSystemFont, 
-            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            border: 0.5px;
-            border-radius: 5px;
-            font-size: larger;
-            color: #fff6ea;
-        }
-        .box1
-        {
-            display: block;
-            width: 800px; 
-            height: 350px; /* Adjust height as needed */ 
-            padding: 30px;
-            background-color: white;
-            border-radius: 10px;
-            float: center;
-            margin: auto; /* Center horizontally */ 
-            position: relative; /* Allow positioning adjustments */
-            left: 10px;
-            align-items: left;
-        }
-        .form
-        {
-            margin-left: 50px;
-        }
-        button:hover
-        {
-            background-color: rgb(154, 65, 33);
-            text-decoration: underline;
-            
-        }
-        .ig1
-        {
-             width: 30px;
-             position: relative;
-            right: 400px;
-        }
-        .flx
-        {
-            display: flex;
-            justify-content:space-between;  
-        }
-        .loginpage
-        {
-            background-color: whitesmoke;
-            height: 620px;
-            margin: 0;
-        }
-        .logoin img
-        {
-            float: left;
-            height: 55px;
-            width:auto;
-            margin-left: 3%;
-            cursor: pointer;
-        }
-        .sign
-        {
-            display: flex;
-        }
-        i
-        {   
-            color: #ff914d;
-            cursor: pointer;
-        }
-        @media (max-width: 1024px) {
-            .box1 {
-                width: 600px;
-                height: auto;
-            }
-            .flx {
-                flex-direction: column;
-            }
-            .loginpage {
-                height: auto;
-            }
-        }
-        
-        /* Media query for mobile devices */
-        @media (max-width: 768px) {
-            .box1 {
-                width: 100%;
-                height: auto;
-                padding: 20px;
-            }
-            input, .lbt button {
-                width: 100%;
-            }
-            .flx {
-                flex-direction: column;
-            }
-            .loginpage {
-                height: auto;
-            }
-            .logoin img {
-                height: 40px;
-            }
-        }
-    
 
+input {
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 120%;
+  font-size: medium;
+  color: #ff914d;
+  border-radius: 10px;
+}
+::placeholder
+{
+  color: #ff914d;
+}
+.gender input
+{
+  width: auto;
+}
+.lbt button {
+  padding: 10px;
+  width: 120%;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff914d;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: 0.5px;
+  border-radius: 5px;
+  font-size: larger;
+  color: #fff6ea;
+}
+.box1
+{
+  display: block;
+  width: 90%; 
+  height: auto; /* Adjust height as needed */ 
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  float: center;
+  margin: auto; /* Center horizontally */ 
+  position: relative; /* Allow positioning adjustments */
+  left: 0;
+  align-items: center;
+}
+.form
+{
+  margin-left: 35px;
+ 
+}
+button:hover
+{
+  background-color: rgb(154, 65, 33);
+  text-decoration: underline;
   
+}
+.ig1
+{
+   width: 30px;
+   position: relative;
+   right: 360px;
+}
+.flx
+{
+  display: flex;
+  justify-content:space-between;  
+}
+.loginpage {
+  background-color: whitesmoke;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+.logoin img
+{
+  float: left;
+  height: 55px;
+  width:auto;
+  margin-left: 3%;
+  cursor: pointer;
+}
+.sign
+{
+  display: flex;
+}
+i
+{   
+  color: #ff914d;
+  cursor: pointer;
+}
+@media (max-width: 2560px) and (min-width: 1024px){
+  .box1 {
+      width: 800px;
+      height: 380px;
+  }
+  .flx {
+      flex-direction: row;
+  }
+  .loginpage 
+  {
+      max-width: 2560px;
+      min-width: 1024px;
+      height: 928px;
+      position: fixed;
+  }
+}
+
+@media (max-width:1024px) and (min-width:768px){
+  .box1
+   {
+    min-width: 768px; /* Adjusted to fit better on tablets */
+    padding: auto;          /* Adjust height for flexibility */
+  }
+  .flx {
+    flex-direction: row;
+    /* Changed to column for better stacking on tablets */
+  }
+  .lbt{
+    width: 85%;
+  }
+  .form
+  {
+    width: 30%;
+
+  }
+  .loginpage {
+    min-width: 728px;
+    height: 928px; /* Adjust height for flexibility */
+    position: fixed;
+  }
+  .ig1
+  {
+      right: 350px;
+      position: relative;
+      height: auto;
+  }
+}
+
+@media (max-width: 475px) and (min-width: 320px) {
+  .box1 {
+    max-width: 475px;
+    min-width: 320px; /* Adjusted to fit better on mobile */
+    height: auto;
+    margin: 0;
+    /* Adjust height for flexibility */
+  }
+  .flx {
+    flex-direction: column-reverse; 
+    max-width: 475px;
+      /* Changed to column for better stacking on mobile */
+  }
+  .lbt
+  {
+    width: 83%;
+  }
+  .form
+  {
+    margin-left: 0;
+   
+    width: 83%;
+  }
+  .loginpage {
+    min-width: 768px;
+    height: 928px; /* Adjust height for flexibility */
+    position: fixed;
+  }
+  .ig1 {
+   /* Adjusted to fit better on mobile */
+    position: static; /* Removed positioning for better handling */
+    margin: 0;
+   }
+  }
+
+
+

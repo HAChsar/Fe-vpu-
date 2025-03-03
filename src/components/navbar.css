@@ -1,9 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .header{
     background-color: #fff6ea;
-    width: 100%;
     height: 65px;
     display: flex;
     position: fixed;
+    width: 100%;
+
 }
 .logo img
 {
@@ -17,11 +23,14 @@
 .interview
 {
     text-align: center;
-    margin-left: 8%;
-    font-synthesis-weight:auto;
+    margin-left: auto;
     font-size: larger;
     cursor: pointer;
-    
+    padding: 20px;
+    position: relative;
+    flex-direction: row;
+    margin-left: 25%;
+
 }
 .interview :hover
 {
@@ -32,10 +41,12 @@
 {
     text-align: center;
     margin-left: 5%;
-    font-synthesis-weight:auto;
     font-size: larger;
     cursor: pointer;
-    
+    padding: 20px;
+    position: relative;
+    flex-direction: row;
+    display: block;
 }
 .resume :hover
 {
@@ -48,68 +59,119 @@
     width: 200px;
     margin: auto;
     border: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: large;
     font-weight: normal;
     cursor: pointer;
-    height: 30px;
-    
+    height: 30px; 
 }
-.login
-{
+.login {
     display: flex;
-    padding: 10px;
-    align-items: right;
-    margin-left: 500px;
-   
-}
+    padding: 15px;
+    align-items: right; 
+    flex-direction: row;
+    margin-left: auto;
+    position: relative;
+  }
 .login img
 {
-    height: 25px;
-    width:35px;
+    height: 40px;
+    width: 50px;
     margin-left: 5px;
     align-items: right;
     cursor: pointer;
     padding: 10px;
 }
-@media (max-width: 1024px) {
-    .header {
-        flex-direction: column;
+
+@media (max-width: 2560px) and (min-width: 1024px){
+    .header 
+    {
+        flex-direction: row;
         height: auto;
+        width: 100%;
+        max-width: 2560px;
+        min-width: 1024px;
+        position: relative;
     }
-    .logo img {
-        margin-left: 0;
+    .logo img
+    {
+        margin-left: 1;
     }
-    .interview, .resume {
-        margin-left: 0;
-        font-size: medium;
+    .interview, .resume
+    {
+        margin-left: 5%;
+        font-size: larger;
+        position: relative;
     }
-    .login {
-        flex-direction: column;
-        margin-left: 0;
+    .login 
+    {
+        flex-direction: row;
+        margin-right: 0;
     }
 }
+@media (max-width: 1024px) and (min-width: 768px) {
+    .header {
+      flex-direction: row;
+      max-width: 1024px;
+      min-width: 768px;
+      height: 65px;
+      position: relative;
+    }
+    .logo img {
+      height: 50px;
+      margin-left: 1px; /* Added unit to margin-left */
+      position: relative;
+    }
+    .interview, .resume {
+      margin-left: 5%;
+      font-size: small;
+      position: relative;
+    }
+    .login img {
+      height: auto;
+    }
+    .login {
+      flex-direction: row;
+      margin-right: 0;
+    }
+    #displaynav {
+      font-size: medium;
+    }
+  }
+  
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 728px) and (min-width:320px){
     .header {
-        flex-direction: column;
-        height: auto;
+        flex-direction: row;
+        min-width: 728px;
+        height: 65px;
+        position: relative;
+        width: 100%;
     }
     .logo img {
         height: 50px;
-        margin-left: 0;
+        margin-left: 1;
+        position: relative;
     }
     .interview, .resume {
-        margin-left: 0;
+        margin-left: 5%;
         font-size: small;
+        position: relative;
+    }
+    .login img
+    {
+        height: auto;
+        
     }
     .login {
-        flex-direction: column;
+        flex-direction: row;
         margin-left: 0;
+       
     }
     #displaynav {
         font-size: medium;
+       
      }
     }
 

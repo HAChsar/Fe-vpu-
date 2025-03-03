@@ -1,146 +1,217 @@
+.appbox {
+  display: block;
+  padding: 50px;
+  color: black;
+  height: 290px;
+  margin-left: 3%;
+  background-color: #fff6ea;
+  float: left;
+  border-radius: 10px;
+  font-size: x-large;
+  gap: 40px;
+  position: relative;
+}
 
-.appbox
-{
-    display: block;
-    padding: 50px;
-    color: black;
-    height: 200px; 
-    margin-left: 3%;
-    background-color: #fff6ea;
-    float:left;
-    border-radius: 10px;
-    font-size: medium;
-    font-size: x-large;  
-    justify-content: flex;
-    display: inline;
-    gap: 40px;
+.appb1 {
+  display: block;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  text-align: left;
 }
-.appb1
-{
-    display: block;
-    padding: 20px;
-    background-color: whitesmoke; 
-border-radius: 10px;
-    text-align: left;
-}
+
 .appb1 p {
-    animation: typing 2s steps(50), blink-caret 2s step-end infinite;
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Ensure the text doesn't overflow */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-  }
+  animation: typing 2s steps(50), blink-caret 2s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  padding: 25px 0;
+}
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 70% }
-}  
-.bt1 button
-{
-    padding: 10px;
-    width: 40%;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #ff914d;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 0.5px;
-    border-radius: 5px;
-    font-size: x-large;
-    animation: fadeIn 3s ease-in-out;  
-    color: #fff6ea; 
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
 }
-.bt1 button:hover
-{
-    background-color: rgb(154, 65, 33);
-    text-decoration:solid;
+
+.bt1 button {
+  padding: 10px;
+  width: 40%;
+  font-size: x-large;
+  cursor: pointer;
+  background-color: #ff914d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 0.5px;
+  border-radius: 5px;
+  animation: fadeIn 3s ease-in-out;
+  color: #fff6ea;
 }
-.resappli
-{
-    display: flex;
-    gap: 27px;
-  
+
+.bt1 button:hover {
+  background-color: rgb(154, 65, 33);
+  text-decoration: solid;
 }
+
+.resappli {
+  display: flex;
+  gap: 27px;
+  position: relative;
+
+}
+
 .carousel-container {
-    position: relative;
-     /* Adjust based on your requirement */
-   
-   
-  }
-  
-  .carousel {
-    overflow: hidden;
-    border-radius: 10px;
-    
-  }
-  
-  .carousel-item {
-    display: none;
-  }
-  
-  .carousel-item.active {
-    display: block;
-  }
-  
-  .carousel-indicators {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .carousel-dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .carousel-dot.active {
-    background-color: #717171;
-  }
-  
+  position: relative;
+  height: 290px;
+}
+
+.carousel {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #717171;
+}
 
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
   }
-  @media (max-width: 1024px) {
-    .appbox {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 30px;
-        height: auto;
-    }
-    .bt1 button {
-        width: 60%;
-    }
-    .slides img {
-        margin-right: 20px;
-        width: 80%;
-    }
+  to {
+    opacity: 1;
+  }
 }
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .appbox {
-        width: 100%;
-        margin-left: 0;
-        padding: 20px;
-        height: auto;
-    }
-    .bt1 button {
-        width: 100%;
-    }
-    .slides img {
-        width: 100%;
-        margin-right: 0;
-    }
+
+/* Laptop (Larger Screens) */
+@media (max-width: 2560px) and (min-width:1024px){
+  .appbox 
+  {
+    padding: 50px;
+    height: 290px;
+    margin-left: 3%;
+    font-size: x-large;
+    float: left;
   }
-    
 
+  .bt1 button 
+  {
+    width: 40%;
+    font-size: x-large;
+  }
 
+  .resappli 
+  {
+    flex-direction: row;
+    gap: 27px;
+  }
+
+  .carousel-container {
+    width: auto;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .appbox {
+    padding: 30px;
+    height: auto;
+    margin-left: 2%;
+    font-size: large;
+    float: none;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .bt1 button {
+    width: 60%;
+    font-size: large;
+  }
+  .resappli {
+    flex-direction: row;
+    height: auto;
+    gap: 20px;
+  }
+
+  .carousel-container {
+    width: 100%;
+
+  }
+
+  .carousel-item img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) and (min-width:320px)
+{
+  .appbox {
+    padding: 20px;
+    height: 200px;
+    margin-left: 1%;
+    font-size: medium;
+    float: none;
+    width: 100%;
+    display: block;
+    gap: 15px;
+  }
+  .appb1 
+  {
+    padding: 10px;
+  }
+
+  .appb1 p {
+    font-size: small;
+  }
+
+  .bt1 button {
+    width: 80%;
+    font-size: medium;
+    padding: 8px;
+  }
+
+  .resappli {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .carousel-container 
+  {
+    width: 100%;
+    max-width: 425px;
+    min-width: 320px;
+    position: relative;
+  }
+
+  .carousel-item img{
+    width: 100%;
+  }
+}

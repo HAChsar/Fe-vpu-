@@ -47,7 +47,7 @@ const Reg = () => {
       </div><br /><br /><br />
       <div className='box'>
         <title>Register</title>
-        <div className="sign">
+        <div className="sign" >
           <p>Register to VprepU.</p>
           <p onClick={() => navigate('/login')}><u>Have an account?</u></p>
         </div>

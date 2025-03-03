@@ -1,18 +1,25 @@
-input {
+.signup-form input {
     display: block;
     margin-bottom: 15px;
     padding: 10px;
-    width: 110%;
+    width: 120%;
     font-size: medium;
     border: solid;
-    border-color: silver;
-   
-    
+    border-color: silver;   
+}
+.signup-form1 input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 120%;
+    font-size: medium;
+    border: solid;
+    border-color: silver;   
 }
 .lbt1 button{
-   align-items: center;
-   padding: 10px;
-    width: 300px;
+    align-items: center;
+    padding: 10px;
+    width: 100px;
     cursor: pointer;
     background-color: #ff914d;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 
@@ -22,10 +29,7 @@ input {
     font-size: larger;
     margin-left: 25%;
     color: white;
-    font-weight: bold;
-   
-    
-    
+    font-weight: bold;   
 }
 
 button:hover
@@ -37,14 +41,13 @@ button:hover
     display: block;
     padding:  33px 100px;
     color: black;
-    max-width: 600px;
+    margin-left: 200px;
     height: 450px; 
-    margin:auto;
     background-color: white;
     float:center;
     border-radius: 10px;
     font-size: medium;
-    
+   
 }
 #Student,#gender,#date
 {
@@ -53,15 +56,13 @@ button:hover
 #gender,#Student
 {
     padding: 10px;
-    width: 122%;
+    width: 120%;
     font-size: medium;
     border-radius: 10px;
     display: block;
     border: solid;
     border-color: silver;
-    
-    
-  
+ 
 }
 a{
     text-decoration: none;
@@ -71,8 +72,9 @@ a{
 {
     background-color: whitesmoke;
     height: 620px;
-    padding: auto;
-   
+    padding: auto;  
+    max-width: 100%; 
+    position: fixed;
 }
 .logoin img
 {
@@ -85,6 +87,8 @@ a{
 .sign
 {
     display: flex;
+    padding: 10px;
+    margin-left: 11%;
 }
 .sign u
 {
@@ -99,52 +103,68 @@ a{
 }
 .sp
 {
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
+    gap: 150px;
+    align-items: center;
 }
-@media (max-width: 1024px) {
-    .box {
-        width: 80%;
+@media (max-width: 2560px) and (min-width: 1024px){
+    .box 
+    {
+        width: 850px;
         padding: 20px;
         height: auto;
+        align-items: center;
+        margin-left: 11%; 
+    }  
+    .page
+    {
+        min-width: 2560px;
+        height: 928px;
     }
-
-    input {
+    .sp
+    {
+        margin-left: 10%;
+    }
+    input 
+    {
         width: 100%;
         padding: 8px;
     }
-
-    .lbt1 button {
-        width: 100%;
-        font-size: medium;
-        margin-left: 0;
+    .lbt1 button 
+    {
+        width: 35%;
+        font-size: large;
+        margin-left: 33%;
     }
+   
 }
 
-/* Media Query for Mobile Devices (max-width: 480px) */
-@media (max-width: 768px) {
-    .box {
-        width: 90%;
-        padding: 15px;
-        height: auto;
-    }
 
-    input {
+/* Media Query for Mobile Devices (max-width: 480px) */
+@media (max-width: 768px) and (min-width: 320px) {
+    .box {
         width: 100%;
+       
+        height: auto;
+        margin-left: 1%;
+    }
+    .page {
+      /* Adjust the width to fit within the viewport */
+        min-width: 320px; /* Remove fixed min-width */
+        max-width: 768px;
+        height: 928px;
+       /* Adjust height if needed */
+    }
+    input {
+        width: 100%; /* Ensure input fits perfectly */
         font-size: small;
     }
-
     .lbt1 button {
         width: 100%;
         font-size: medium;
         margin-left: 0;
     }
-
-    .sign {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .logoin img {
         height: 40px;
         margin-left: 0;

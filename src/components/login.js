@@ -13,13 +13,12 @@ const Login = () =>  {
   </div><br></br><br></br><br></br>
     <div className='box1'>   
 <div className='flx'>
-  
   <div className="form">
 
   <title>Form Validation</title>
-  <p><l>Sign in to VprepU</l></p>
+  <p style={{padding:'10px 0' }}><l>Sign in to VprepU</l></p>
   <form className="signup-form">
-    <input type="email" id="email" placeholder="Enter your email" required="" />
+    <input type="email" id="email" placeholder="Enter your email" required=""/>
     <input
       type="password"
       id="password"
@@ -33,7 +32,7 @@ const Login = () =>  {
   </form><br></br>
    <p onClick={() => navigate('/register')}> New to VprepU ?<i>Register</i></p>
    <br></br><br></br>
-  </div>
+    </div>
   <div className="ig1">
   <img src={Image} width={400} height={250} alt="img"/>
   </div>

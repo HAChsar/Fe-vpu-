@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
       
       <div onClick={() => navigate('/login')} className="login">
-        <img src={loginImage} alt="loginlogo" width={50} height={50} />
+        <img src={loginImage} alt="loginlogo"/>
         <input id='displaynav' readOnly />
       </div>
     </div>
